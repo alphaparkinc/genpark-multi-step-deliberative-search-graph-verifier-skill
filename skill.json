@@ -1,0 +1,38 @@
+{
+  "name": "genpark-multi-step-deliberative-search-graph-verifier-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-step deliberative search engine decomposing complex queries into verified sub-hypothesis trees.",
+  "author": "genpark",
+  "category": "reasoning-search",
+  "tags": [
+    "deliberative-search",
+    "reasoning-tree",
+    "perplexity-pro",
+    "citation-graph",
+    "epistemic-verification"
+  ],
+  "inputs": {
+    "complex_hypothesis": {
+      "type": "string"
+    },
+    "search_depth": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "search_tree_id": {
+      "type": "string"
+    },
+    "sub_queries_decomposed": {
+      "type": "integer"
+    },
+    "peer_reviewed_citations_verified": {
+      "type": "integer"
+    },
+    "epistemic_confidence_index": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
